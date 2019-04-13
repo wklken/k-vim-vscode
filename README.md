@@ -36,7 +36,7 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
     "bracket-pair-colorizer-2.showVerticalScopeLine": false,
     "bracket-pair-colorizer-2.colorMode": "Independent",
     // extension: sync
-    "sync.gist": "7e7efe82ce6252439e93303696a10433",
+    "sync.gist": "",
     // extension: vim
     "vim.leader": ",",
     "vim.hlsearch": true,
