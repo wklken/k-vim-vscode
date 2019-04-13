@@ -5,7 +5,7 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
 
 ## vscode settings
 
-```
+```javascript
 {
     "editor.fontSize": 16,
     "editor.fontFamily": "Menlo",
