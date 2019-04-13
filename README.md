@@ -41,6 +41,7 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
     "vim.leader": ",",
     "vim.hlsearch": true,
     "vim.textwidth": 120,
+    "vim.visualstar": true,
     "vim.insertModeKeyBindings": [
         // k-j to ESC
         {
@@ -101,12 +102,12 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
         // leader-cc comment / uncomment
         {
             "before": ["leader", "c", "c"],
-            "after": ["g", "c", "c"]
+            "commands": ["editor.action.addCommentLine"]
         },
         // leader-cu comment / uncomment
         {
             "before": ["leader", "c", "u"],
-            "after": ["g", "c", "c"]
+            "commands": ["editor.action.removeCommentLine"]
         },
         // leader-vp vsp
         {
@@ -156,6 +157,15 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
             "before": ["<C-m>"],
             "after": ["g", "b"]
         },
+        // comment with leader cc/cu
+        {
+            "before": ["<leader>", "c", "c"],
+            "commands": ["editor.action.addCommentLine"]
+        },
+        {
+            "before": ["<leader>", "c", "u"],
+            "commands": ["editor.action.removeCommentLine"]
+        },
         // indent/outdent lines (repeatable)
         {
             "before": [
@@ -202,7 +212,6 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
     ],
     "python.linting.pylintEnabled": false,
 }
-
 ```
 
 #### vscode key-maps
