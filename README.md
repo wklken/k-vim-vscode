@@ -37,13 +37,6 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
     "bracket-pair-colorizer-2.colorMode": "Independent",
     // extension: sync
     "sync.gist": "7e7efe82ce6252439e93303696a10433",
-    // extension: go
-    "go.useLanguageServer": true,
-    "go.autocompleteUnimportedPackages": true,
-    "go.useCodeSnippetsOnFunctionSuggest": true,
-    "go.lintOnSave": "file",
-    // - https://github.com/golangci/golangci-lint
-    "go.lintTool": "golangci-lint",
     // extension: vim
     "vim.leader": ",",
     "vim.hlsearch": true,
@@ -192,6 +185,22 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
     "vim.easymotionMarkerFontSize": "16",
     "vim.easymotionMarkerHeight": 24,
     "vim.easymotionMarkerBackgroundColor": "#f44242",
+    // extension: go
+    "go.useLanguageServer": true,
+    "go.autocompleteUnimportedPackages": true,
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.lintOnSave": "file",
+    // - https://github.com/golangci/golangci-lint
+    "go.lintTool": "golangci-lint",
+    // extension: python
+    "python.unitTest.nosetestsEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+        "--max-complexity=12",
+        "--format=pylint"
+    ],
+    "python.linting.pylintEnabled": false,
 }
 
 ```
