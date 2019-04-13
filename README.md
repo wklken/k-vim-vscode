@@ -244,12 +244,7 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
 ```
 
 
-### Donation
-
-如果你认为对你有所帮助, You can Buy me a coffee:)
-
-
-![donation](https://raw.githubusercontent.com/wklken/gallery/master/donation/donation_w.jpg)
+------
 
 wklken
 
