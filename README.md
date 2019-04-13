@@ -69,6 +69,16 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
                 }
             ]
         },
+        // leader-w to save
+        {
+            "before": ["leader", "w"],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
+        },
         // ctrl-m to multi-cursor select
         {
             "before": ["<C-m>"],
@@ -121,13 +131,54 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
                     "command": "workbench.action.splitEditorRight"
                 }
             ]
-        }
+        },
+        // switch # and *
+        {
+            "before": ["*"],
+            "after": ["#"]
+        },
+        {
+            "before": ["#"],
+            "after": ["*"]
+        },
+        // show the command palette
+        {
+            "before": [":"],
+            "commands": [
+                "workbench.action.showCommands",
+            ]
+        },
+        // turn-off highlight
+        {
+            "before":["leader", "/"],
+            "commands": [
+                ":nohl",
+            ]
+        },
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
+        // multi-cursor
         {
             "before": ["<C-m>"],
             "after": ["g", "b"]
-        }
+        },
+        // indent/outdent lines (repeatable)
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
     ],
     // auto switch input, detail https://github.com/VSCodeVim/Vim#input-method
     "vim.autoSwitchInputMethod.enable": true,
@@ -141,6 +192,7 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
     "vim.easymotionMarkerHeight": 24,
     "vim.easymotionMarkerBackgroundColor": "#f44242",
 }
+
 ```
 ### Donation
 
