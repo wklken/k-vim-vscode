@@ -42,6 +42,7 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
     "go.autocompleteUnimportedPackages": true,
     "go.useCodeSnippetsOnFunctionSuggest": true,
     "go.lintOnSave": "file",
+    // - https://github.com/golangci/golangci-lint
     "go.lintTool": "golangci-lint",
     // extension: vim
     "vim.leader": ",",
