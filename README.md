@@ -194,6 +194,23 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
 }
 
 ```
+
+#### vscode key-maps
+
+```javascript
+{
+  "key": "ctrl+j",
+  "command": "selectNextSuggestion",
+  "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+},
+{
+  "key": "ctrl+k",
+  "command": "selectPrevSuggestion",
+  "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+}
+```
+
+
 ### Donation
 
 如果你认为对你有所帮助, You can Buy me a coffee:)
