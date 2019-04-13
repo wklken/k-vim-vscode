@@ -3,7 +3,7 @@
 vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/k-vim)! Happy Coding! 
 
 
-## vscode settings
+## vscode settings.json
 
 ```javascript
 {
@@ -214,19 +214,33 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
 }
 ```
 
-#### vscode key-maps
+#### vscode keybindings.json
 
 ```javascript
-{
-  "key": "ctrl+j",
-  "command": "selectNextSuggestion",
-  "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-},
-{
-  "key": "ctrl+k",
-  "command": "selectPrevSuggestion",
-  "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-}
+
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    }
+]
 ```
 
 
