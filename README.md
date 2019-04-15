@@ -214,7 +214,7 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
 }
 ```
 
-#### vscode keybindings.json
+## vscode keybindings.json
 
 ```javascript
 
