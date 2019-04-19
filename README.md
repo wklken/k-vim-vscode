@@ -217,9 +217,12 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
 ## vscode keybindings.json
 
 ```javascript
-
 // Place your key bindings in this file to override the defaultsauto[]
 [
+    // add vscode to popclip if you installed one on your mac!
+    // ! double click can't select one world
+
+    // ctrl+j/k for choose suggestion
     {
         "key": "ctrl+j",
         "command": "selectNextSuggestion",
@@ -230,16 +233,101 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
         "command": "selectPrevSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
+    // ctrl+j/k for quick open choose
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+
+    // cmd + enter, rename
+    {
+        "key": "cmd+enter",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    // enter, open
+    {
+        "key": "enter",
+        "command": "-renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "enter",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    // ctrl+l/h to the next/previous edirot
     {
         "key": "ctrl+l",
-        "command": "workbench.action.terminal.focusNextPane",
-        "when": "terminalFocus"
+        "command": "workbench.action.nextEditor"
     },
     {
         "key": "ctrl+h",
-        "command": "workbench.action.terminal.focusNextPane",
+        "command": "workbench.action.previousEditor"
+    },
+    // cmd+number to change editor, swith with ctrl+number
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.openEditorAtIndex1",
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.openEditorAtIndex2",
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.openEditorAtIndex3",
+    },
+    {
+        "key": "cmd+4",
+        "command": "workbench.action.openEditorAtIndex4",
+    },
+    {
+        "key": "cmd+5",
+        "command": "workbench.action.openEditorAtIndex5",
+    },
+    {
+        "key": "cmd+6",
+        "command": "workbench.action.openEditorAtIndex6",
+    },
+    {
+        "key": "cmd+7",
+        "command": "workbench.action.openEditorAtIndex7",
+    },
+    {
+        "key": "cmd+8",
+        "command": "workbench.action.openEditorAtIndex8",
+    },
+    {
+        "key": "cmd+9",
+        "command": "workbench.action.openEditorAtIndex9",
+    },
+    // change group, swith with cmd+number
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.focusFirstEditorGroup",
+    },
+    {
+        "key": "ctrl+2",
+        "command": "workbench.action.focusSecondEditorGroup",
+    },
+    // active between editor and terminal
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
-    }
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
+    },
 ]
 ```
 
