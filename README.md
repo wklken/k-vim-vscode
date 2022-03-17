@@ -294,6 +294,12 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
             "before": ["leader", "r", "n"],
             "commands": ["editor.action.rename"]
         },
+        // shortcut: leader-space
+        // trailing space
+        {
+            "before": ["leader", "space"],
+            "commands": ["editor.action.trimTrailingWhitespace"]
+        },
         // shortcut: # and *
         // - switch # and *
         {
