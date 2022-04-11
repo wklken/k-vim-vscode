@@ -433,9 +433,6 @@ vscode settings with vim key-bindings just like k-vim(https://github.com/wklken/
     // - easymotion. detail https://github.com/VSCodeVim/Vim#vim-easymotion
     "vim.easymotion": true,
 
-    // ## Extension: sync
-    "sync.gist": "6c3d915ded89db5b74f3d0d3a110a04a",
-
     // ## Extension: python
     // "python.linting.flake8Enabled": true,
     // "python.linting.pylintEnabled": false,
